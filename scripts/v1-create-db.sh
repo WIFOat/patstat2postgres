@@ -9,7 +9,6 @@ tmpsqlfile=$(mktemp)
 export DB_NAME
 envsubst < base/create.sql > "${tmpsqlfile}" 
 
-echo "psql -h ${DB_HOST} -U ${DB_USER} -f $tmpsqlfile postgres"
 psql -h ${DB_HOST} -U ${DB_USER} -f $tmpsqlfile postgres
 
 rm "$tmpsqlfile"

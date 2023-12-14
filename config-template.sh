@@ -8,11 +8,13 @@ PATSTAT_VERSION=2023b
 # get long version name 
 if [ "${PATSTAT_VERSION:4:1}" == "a" ]
 then
-    PATSTAT_VERSION_LONG="Autumn"
-else
     PATSTAT_VERSION_LONG="Spring"
+else
+    PATSTAT_VERSION_LONG="Autumn"
 fi
 PATSTAT_VERSION_LONG="${PATSTAT_VERSION_LONG} ${PATSTAT_VERSION:0:4}"
+
+echo "Version set to '${PATSTAT_VERSION_LONG}' (${PATSTAT_VERSION})"
 
 
 # DB SETTINGS
