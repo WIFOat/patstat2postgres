@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+SCRIPT_FOLDER=`dirname -- "$0"`/..;
+cd $SCRIPT_FOLDER
 . config.sh
 
 while IFS="" read -r line || [ -n "$line" ]
@@ -12,4 +15,4 @@ do
     echo -ne "\r"
     echo -e "${base}\t${count}"
 
-done < ../versions/${PATSTAT_VERSION}/tables.txt
+done < versions/${PATSTAT_VERSION}/tables.txt

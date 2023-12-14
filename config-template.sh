@@ -1,6 +1,9 @@
-#! /bin/echo Please source
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+  echo "This script is intended to be sourced, not executed directly."
+  exit 1
+fi
 
-PATSTAT_VERSION=2022b
+PATSTAT_VERSION=2023b
 
 # get long version name 
 if [ "${PATSTAT_VERSION:4:1}" == "a" ]
@@ -23,4 +26,3 @@ DB_USER_READER_PASS=secret
 
 # FILE/FOLDERS
 PATSTAT_ZIP_DIR=/directory/with/patstat/zips
-TMP_FILE=/tmp/file/extracted/zip/file
