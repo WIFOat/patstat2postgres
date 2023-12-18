@@ -13,3 +13,9 @@ This repository is based on <https://github.com/altay-oz/load_patstat>.
 Copy `config-template.sh` to `config.sh` and adjust it to your needs.
 
 Run the scripts under `scripts` folders.
+
+
+### promising patstat postgres repos:
+
+- https://github.com/max-planck-innovation-competition/go-patstat
+- https://github.com/Ianvdl/patstat-to-postgresql

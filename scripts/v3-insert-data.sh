@@ -11,7 +11,7 @@ do
     tls_nr="${line:0:6}"
     name="${line:7}"
 
-    echo "Inflating ${name} (${tls_nr})"
+    echo "Inflating ${name} (${tls_nr}):"
 
     for file in "${PATSTAT_ZIP_DIR}/${tls_nr}"*
     do
