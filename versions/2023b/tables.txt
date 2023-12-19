@@ -13,7 +13,6 @@ tls214_npl_publn
 tls215_citn_categ
 tls216_appln_contn
 tls222_appln_jp_class
-tls223_appln_docus
 tls224_appln_cpc
 tls225_docdb_fam_cpc
 tls226_person_orig
