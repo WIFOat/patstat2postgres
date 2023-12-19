@@ -1,4 +1,4 @@
-## PATSTAT to Postgres 
+# PATSTAT to Postgres 
 
 > **Warning**
 > Work in progress
@@ -8,19 +8,19 @@ Postgres import scripts for the [PATSTAT database](https://www.epo.org/searching
 This repository is based on <https://github.com/altay-oz/load_patstat>.
 
 
-### how-to
+## how-to
 
 Copy `config-template.sh` to `config.sh` and adjust it to your needs.
 
 Run the scripts under `scripts` folders.
 
-#### scipts
+### scripts
 
-base:
+**base**
 - `b1-create-user-reader.sh`
 - `b2-grant-user-reader.sh`
 
-version:
+**version**
 - `v1-create-db.sh`
 - `v2-create-tables.sh`
 
@@ -36,7 +36,7 @@ version:
 
     Counts rows (only for tables listed in `versions/{PATSTAT_VERSION}/tables.txt`)
 
-### promising patstat postgres repos:
+## promising patstat to postgres repos:
 
 - https://github.com/max-planck-innovation-competition/go-patstat
 - https://github.com/Ianvdl/patstat-to-postgresql
