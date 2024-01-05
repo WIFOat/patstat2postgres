@@ -8,8 +8,8 @@ tmpsqlfile=$(mktemp)
 
 export DB_USER_READER
 export DB_NAME
-envsubst < base/priveleges.sql > "${tmpsqlfile}" 
+envsubst < base/privileges.sql > "${tmpsqlfile}" 
 
-psql -h ${DB_HOST} -U ${DB_USER} -f $tmpsqlfile postgres
+psql -h ${DB_HOST} -U ${DB_USER} -f $tmpsqlfile ${DB_NAME}
 
 rm "$tmpsqlfile"
