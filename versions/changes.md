@@ -1,6 +1,6 @@
 ## Changes
 
-List of mentioned changes in the data catalog `DataCatalog_Global_v5.22.pdf` file.
+List of mentioned changes in the data catalog `DataCatalog_Global_v5.24.pdf` file.
 
 
 ### 2021a
@@ -41,3 +41,16 @@ List of mentioned changes in the data catalog `DataCatalog_Global_v5.22.pdf` fil
 - No PSN update for new names (the last based on Autumn 2021)
 - `APPLN_NR_EPODOC` is re-introduced in table `TLS201_APPLN` because of usage in PATSTAT EP Register
 - In the PATSTAT Global editions before Spring 2023, for the US publications from 1833-2011 with inventor information only, the applicant used to be the same as the inventor (e.g., `US 1472793 A`). In the previous edition (Spring 2023) that was not the case (i.e., the applicant was not given) due to a technical issue. In this edition (Autumn 2023) the applicant is again the same as in Autumn 2022 and earlier editions.
+
+
+### 2024a
+
+- Based on the data extraction from Week 7, 2024
+- No PSN update for new names (the last based on Autumn 2021)
+
+
+### 2024b
+
+- Based on the data extraction from Week 31, 2024
+- No PSN update for new names (the last based on Autumn 2021)
+- Due to re-keying, app. 41 000 HU A applications have a modified application number (i.e., “P” has been appended, e.g., HU 1900374 A is now HU P1900374 A)
